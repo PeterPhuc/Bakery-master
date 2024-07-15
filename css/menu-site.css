@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.elementor-section-breadcrumb {
+    /* margin-left: 20px; */
+    padding: 0 7.9rem;
+    color: #BC132C !important;
+    font-family: "Montserrat", Sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+.woocommerce-breadcrumb a {
+    color: #BC132C !important;
+}
+
+
+.elementor-section-title {
+    padding-top: 4rem;
+    padding-bottom: 0px;
+}
+.elementor-title-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+h2.product-list-title {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 37px;
+
+    color: #BC132C;
+    /* flex-shrink: 0; */
+}
+.elementor-divider {
+    border-top: 1px solid #000;
+    flex-grow: 1;
+    margin-left: 2.4%;
+
+    position: relative;
+    top: 4px;
+}
+
+.elementor-section-category-list {
+    padding-top: 1rem;
+    padding-bottom: 0px;
+}
+
+
+.elementor-category-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0 10px;
+}
+.elementor-widget-container{
+    flex-grow: 1;
+    width: 214px;
+    height: 280px;
+
+    position: relative;
+}
+.elementor-category-container .elementor-cta{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+}
+.elementor-category-container .elementor-cta__bg-wrapper{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+.elementor-category-container .elementor-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../images/br1.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    transition: 1500ms;
+}
+.elementor-category-container .elementor-cta__bg-overlay{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: #000;
+    opacity: 0;
+
+    transition: 1500ms;
+}
+.elementor-category-container .elementor-cta__content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    padding: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* color: #fff; */
+}
+.elementor-category-container .elementor-cta__content h2 {
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+    transition: 1500ms;
+}
+
+.elementor-category-container .elementor-cta:hover h2 {
+    font-size: 20px;
+}
+.elementor-category-container .elementor-cta:hover .elementor-cta__bg-overlay {
+    opacity: 0.5;
+}
+.elementor-category-container .elementor-cta:hover .elementor-bg {
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+.elementor-section-product-list {
+    padding-top: 1rem;
+    padding-bottom: 0px;
+}
+.elementor-product-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.elementor-product-form-ordering {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+form.woocommerce-ordering {
+    width: 200px;
+}
+
+input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 0.9rem 1rem;
+    transition: all .3s;
+    font-size: 1.6rem;
+}
+
+.elementor-product-list{
+    width: 100%;
+}
+ul.products {
+    padding-left: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 35px;
+}
+li.elementor-widget-container{
+    flex-grow: initial !important;
+    width: 214px;
+    height: auto !important;
+    position: relative;
+
+    padding: 10px 10px 10px 10px !important;
+}
+.elementor-widget-container .elementor-cta img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+    margin-bottom: 16px;
+}
+
+.elementor-product-list .elementor-cta h2 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #BC132C;
+    text-align: center;
+}
+
+.elementor-product-list .elementor-cta .price {
+    color: #665659;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 16px;
+
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.elementor-product-list .elementor-cta .price del {
+    color: #b4b4b4;
+    margin-right: 3%;
+}
+
+.elementor-product-list .elementor-cta .price del .amount {
+    font-weight: 430;
+    color: #b4b4b4;
+}
+
+.product-cat-badge {
+    position: absolute;
+    top: 11px;
+    right: 17px;
+    border-radius: 2px;
+    padding: 6px 8px;
+    padding-top: 8px;
+    z-index: 10;
+    font-family: 'Montserrat', Sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.product-cat-badge.badge-new {
+    background-color: #BC132C;
+    color: #FFFCFC;
+}
