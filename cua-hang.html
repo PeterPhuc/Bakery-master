@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống cửa hàng - Choco Bakery</title>
+    <link rel="icon" type="image/x-icon" href="./images/Chococakepng.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/public/normalize/normalize.min.css">
+    <link rel="stylesheet" href="./css/public/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/header-footer/header/header.css">
+    <link rel="stylesheet" href="./css/header-footer/header/menu-mobile.css">
+    <link rel="stylesheet" href="./css/header-footer/footer/footer.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
+
+    <link rel="stylesheet" href="./css/others/sticky-icon-perpage.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
+
+    <link rel="stylesheet" href="./css/cua-hang.css">
+
+    <script defer src="./js/public/bootstrap/bootstrap5-3-3.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main>
+            <section class="section-breadcrumb">
+                <!-- <div class="section-elementor-breadcrumb breadcrumb-w-img">
+                    <div class="section-breadcrumb-content">
+                        <div class="inner inner-text">
+                            <h2>Tin tức & sự kiện</h2>
+                            <span>Tin tức mới nhất về các sản phẩm, chương trình của Hỷ Lâm Môn</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="breadcrumb-wrapper">
+
+                </div>
+            </section>
+
+            <div class="pg-store-main-content">
+                <div class="pg-store-container">
+                    <div class="pg-store-title">
+                        <h1>Hệ thống cửa hàng</h1>
+                    </div>
+                    <div class="pg-store-content">
+                        <div class="store-content-wrapper">
+                            <div class="store-content-col-1 store-category">
+                                <div class="store-category-option">
+                                    <form action="">
+                                        <div class="form-group form-group-mb">
+                                            <select aria-hidden="true" class="form-select" data-address-type="province"
+                                                data-address-zone="billing" name="province" required="" type="text">
+                                                <option value="" hidden="">Tỉnh / Thành phố</option>
+                                                <option value="1">Hà Nội</option>
+                                                <option value="2">TP Hồ Chí Minh</option>
+                                                <option value="3">An Giang</option>
+                                                <option value="4">Bà Rịa-Vũng Tàu</option>
+                                            </select>
+                                            <select aria-hidden="true" class="form-select" data-address-type="district"
+                                                data-address-zone="billing" name="district" required="" type="text">
+                                                <option value="" hidden="">Quận / Huyện</option>
+                                                <option value="121">Thành phố Quy Nhơn</option>
+                                                <option value="122">Huyện An Lão</option>
+                                                <option value="123">Thị xã An Nhơn</option>
+                                                <option value="123">Thị xã An Nhơn</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="store-category-info-store">
+                                    <div data-local="Hồ Chí Minh" data-district="Quận 10" data-ward="Phường 15"
+                                        class="store-list">
+                                        <!-- <div class="store-name">
+                                            <b>Choco Bakery 1 (Trụ sở chính)</b>
+                                            <span>
+                                                <i class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                                        </path>
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                        </path>
+                                                    </svg>
+                                                </i> 
+                                                Tầng 3, 70 Lữ Gia, Phường 15, Quận 11, Thành phố Hồ Chí
+                                                Minh
+                                            </span>
+                                            <span>
+                                                <i class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                                <a href="tel:1900 6750">1900 6750</a>
+                                            </span>
+                                        </div> -->
+
+                                        <div class="store-name">
+                                            <h2>Choco Bakery 1</h2>
+                                        </div>
+                                        <div class="store-detail">
+                                            <div class="store-detail__address">
+                                                <i class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                                        </path>
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                        </path>
+                                                    </svg>
+                                                </i> 
+                                                <span>Địa chỉ: </span>
+                                                <span class="address-content">
+                                                    101 Ba Vân, Phường 14, Quận Tân Bình, TP. HCM
+                                                </span>
+                                                
+                                            </div>
+                                            <div class="store-detail__phone">
+                                                <i class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                                <span>Điện thoại: </span>
+                                                <a href="tel:0962241142">0962241142</a>
+                                            </div>
+                                            <div class="store-detail__working-hours">
+                                                <i class="icon icon--clock">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-10.66886,11.64301) rotate(-5) scale(10.66667,10.66667)"><path d="M12,2c-5.51693,0 -10,4.48308 -10,10c0,5.51693 4.48307,10 10,10c5.51693,0 10,-4.48307 10,-10c0,-5.51692 -4.48307,-10 -10,-10zM12,3c4.97649,0 9,4.02351 9,9c0,4.97649 -4.02351,9 -9,9c-4.97649,0 -9,-4.02351 -9,-9c0,-4.97649 4.02351,-9 9,-9zM12.48047,4.99414c-0.25536,0.01045 -0.46173,0.21178 -0.47852,0.4668l-0.5,6.5c-0.01365,0.17444 0.06487,0.34332 0.20703,0.44531l3.5,2.5c0.1448,0.11178 0.33907,0.13558 0.50657,0.06205c0.1675,-0.07353 0.28148,-0.23264 0.2972,-0.41489c0.01573,-0.18225 -0.06931,-0.35853 -0.22174,-0.45967l-3.27148,-2.33594l0.47852,-6.21875c0.01302,-0.14331 -0.03633,-0.28529 -0.13543,-0.38963c-0.0991,-0.10434 -0.23835,-0.16093 -0.38215,-0.15529z"/></g></g></svg>
+                                                </i>
+                                                <span>Giờ mở cửa: </span>
+                                                <span class="working-hours-content">6:00 - 23:00 | Thứ 2 - Chủ Nhật.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div data-local="Hồ Chí Minh" data-district="Quận 10" data-ward="Phường 15"
+                                        class="store-list">
+                                        <div class="store-name">
+                                            <h2>Choco Bakery 2</h2>
+                                        </div>
+                                        <div class="store-detail">
+                                            <div class="store-detail__address">
+                                                <i class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                                        </path>
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                        </path>
+                                                    </svg>
+                                                </i> 
+                                                <span>Địa chỉ: </span>
+                                                <span class="address-content">
+                                                    312 Tân Sơn Nhì, P. Tân Sơn Nhì, Q. Tân Phú
+                                                </span>
+                                                
+                                            </div>
+                                            <div class="store-detail__phone">
+                                                <i class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                                <span>Điện thoại: </span>
+                                                <a href="tel:0962241142">0962241142</a>
+                                            </div>
+                                            <div class="store-detail__working-hours">
+                                                <i class="icon icon--clock">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-10.66886,11.64301) rotate(-5) scale(10.66667,10.66667)"><path d="M12,2c-5.51693,0 -10,4.48308 -10,10c0,5.51693 4.48307,10 10,10c5.51693,0 10,-4.48307 10,-10c0,-5.51692 -4.48307,-10 -10,-10zM12,3c4.97649,0 9,4.02351 9,9c0,4.97649 -4.02351,9 -9,9c-4.97649,0 -9,-4.02351 -9,-9c0,-4.97649 4.02351,-9 9,-9zM12.48047,4.99414c-0.25536,0.01045 -0.46173,0.21178 -0.47852,0.4668l-0.5,6.5c-0.01365,0.17444 0.06487,0.34332 0.20703,0.44531l3.5,2.5c0.1448,0.11178 0.33907,0.13558 0.50657,0.06205c0.1675,-0.07353 0.28148,-0.23264 0.2972,-0.41489c0.01573,-0.18225 -0.06931,-0.35853 -0.22174,-0.45967l-3.27148,-2.33594l0.47852,-6.21875c0.01302,-0.14331 -0.03633,-0.28529 -0.13543,-0.38963c-0.0991,-0.10434 -0.23835,-0.16093 -0.38215,-0.15529z"/></g></g></svg>
+                                                </i>
+                                                <span>Giờ mở cửa: </span>
+                                                <span class="working-hours-content">6:00 - 23:00 | Thứ 2 - Chủ Nhật.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div data-local="Hồ Chí Minh" data-district="Quận 10" data-ward="Phường 15"
+                                        class="store-list">
+                                        <div class="store-name">
+                                            <h2>Choco Bakery 2</h2>
+                                        </div>
+                                        <div class="store-detail">
+                                            <div class="store-detail__address">
+                                                <i class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                                        </path>
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                        </path>
+                                                    </svg>
+                                                </i> 
+                                                <span>Địa chỉ: </span>
+                                                <span class="address-content">
+                                                    312 Tân Sơn Nhì, P. Tân Sơn Nhì, Q. Tân Phú
+                                                </span>
+                                                
+                                            </div>
+                                            <div class="store-detail__phone">
+                                                <i class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                                <span>Điện thoại: </span>
+                                                <a href="tel:0962241142">0962241142</a>
+                                            </div>
+                                            <div class="store-detail__working-hours">
+                                                <i class="icon icon--clock">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-10.66886,11.64301) rotate(-5) scale(10.66667,10.66667)"><path d="M12,2c-5.51693,0 -10,4.48308 -10,10c0,5.51693 4.48307,10 10,10c5.51693,0 10,-4.48307 10,-10c0,-5.51692 -4.48307,-10 -10,-10zM12,3c4.97649,0 9,4.02351 9,9c0,4.97649 -4.02351,9 -9,9c-4.97649,0 -9,-4.02351 -9,-9c0,-4.97649 4.02351,-9 9,-9zM12.48047,4.99414c-0.25536,0.01045 -0.46173,0.21178 -0.47852,0.4668l-0.5,6.5c-0.01365,0.17444 0.06487,0.34332 0.20703,0.44531l3.5,2.5c0.1448,0.11178 0.33907,0.13558 0.50657,0.06205c0.1675,-0.07353 0.28148,-0.23264 0.2972,-0.41489c0.01573,-0.18225 -0.06931,-0.35853 -0.22174,-0.45967l-3.27148,-2.33594l0.47852,-6.21875c0.01302,-0.14331 -0.03633,-0.28529 -0.13543,-0.38963c-0.0991,-0.10434 -0.23835,-0.16093 -0.38215,-0.15529z"/></g></g></svg>
+                                                </i>
+                                                <span>Giờ mở cửa: </span>
+                                                <span class="working-hours-content">6:00 - 23:00 | Thứ 2 - Chủ Nhật.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-local="Hồ Chí Minh" data-district="Quận 10" data-ward="Phường 15"
+                                        class="store-list">
+                                        <div class="store-name">
+                                            <h2>Choco Bakery 2</h2>
+                                        </div>
+                                        <div class="store-detail">
+                                            <div class="store-detail__address">
+                                                <i class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                                        </path>
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                        </path>
+                                                    </svg>
+                                                </i> 
+                                                <span>Địa chỉ: </span>
+                                                <span class="address-content">
+                                                    312 Tân Sơn Nhì, P. Tân Sơn Nhì, Q. Tân Phú
+                                                </span>
+                                                
+                                            </div>
+                                            <div class="store-detail__phone">
+                                                <i class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                                <span>Điện thoại: </span>
+                                                <a href="tel:0962241142">0962241142</a>
+                                            </div>
+                                            <div class="store-detail__working-hours">
+                                                <i class="icon icon--clock">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-10.66886,11.64301) rotate(-5) scale(10.66667,10.66667)"><path d="M12,2c-5.51693,0 -10,4.48308 -10,10c0,5.51693 4.48307,10 10,10c5.51693,0 10,-4.48307 10,-10c0,-5.51692 -4.48307,-10 -10,-10zM12,3c4.97649,0 9,4.02351 9,9c0,4.97649 -4.02351,9 -9,9c-4.97649,0 -9,-4.02351 -9,-9c0,-4.97649 4.02351,-9 9,-9zM12.48047,4.99414c-0.25536,0.01045 -0.46173,0.21178 -0.47852,0.4668l-0.5,6.5c-0.01365,0.17444 0.06487,0.34332 0.20703,0.44531l3.5,2.5c0.1448,0.11178 0.33907,0.13558 0.50657,0.06205c0.1675,-0.07353 0.28148,-0.23264 0.2972,-0.41489c0.01573,-0.18225 -0.06931,-0.35853 -0.22174,-0.45967l-3.27148,-2.33594l0.47852,-6.21875c0.01302,-0.14331 -0.03633,-0.28529 -0.13543,-0.38963c-0.0991,-0.10434 -0.23835,-0.16093 -0.38215,-0.15529z"/></g></g></svg>
+                                                </i>
+                                                <span>Giờ mở cửa: </span>
+                                                <span class="working-hours-content">6:00 - 23:00 | Thứ 2 - Chủ Nhật.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-local="Hồ Chí Minh" data-district="Quận 10" data-ward="Phường 15"
+                                        class="store-list">
+                                        <div class="store-name">
+                                            <h2>Choco Bakery 2</h2>
+                                        </div>
+                                        <div class="store-detail">
+                                            <div class="store-detail__address">
+                                                <i class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                                        </path>
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                        </path>
+                                                    </svg>
+                                                </i> 
+                                                <span>Địa chỉ: </span>
+                                                <span class="address-content">
+                                                    312 Tân Sơn Nhì, P. Tân Sơn Nhì, Q. Tân Phú
+                                                </span>
+                                                
+                                            </div>
+                                            <div class="store-detail__phone">
+                                                <i class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                                <span>Điện thoại: </span>
+                                                <a href="tel:0962241142">0962241142</a>
+                                            </div>
+                                            <div class="store-detail__working-hours">
+                                                <i class="icon icon--clock">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill-rule="nonzero"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="translate(-10.66886,11.64301) rotate(-5) scale(10.66667,10.66667)"><path d="M12,2c-5.51693,0 -10,4.48308 -10,10c0,5.51693 4.48307,10 10,10c5.51693,0 10,-4.48307 10,-10c0,-5.51692 -4.48307,-10 -10,-10zM12,3c4.97649,0 9,4.02351 9,9c0,4.97649 -4.02351,9 -9,9c-4.97649,0 -9,-4.02351 -9,-9c0,-4.97649 4.02351,-9 9,-9zM12.48047,4.99414c-0.25536,0.01045 -0.46173,0.21178 -0.47852,0.4668l-0.5,6.5c-0.01365,0.17444 0.06487,0.34332 0.20703,0.44531l3.5,2.5c0.1448,0.11178 0.33907,0.13558 0.50657,0.06205c0.1675,-0.07353 0.28148,-0.23264 0.2972,-0.41489c0.01573,-0.18225 -0.06931,-0.35853 -0.22174,-0.45967l-3.27148,-2.33594l0.47852,-6.21875c0.01302,-0.14331 -0.03633,-0.28529 -0.13543,-0.38963c-0.0991,-0.10434 -0.23835,-0.16093 -0.38215,-0.15529z"/></g></g></svg>
+                                                </i>
+                                                <span>Giờ mở cửa: </span>
+                                                <span class="working-hours-content">6:00 - 23:00 | Thứ 2 - Chủ Nhật.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store-content-col-2 store-map">
+                                <!-- Chi nhánh 1 -->
+                                <!-- <iframe class="choco-map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2032466937458!2d106.6404764!3d10.7957398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529000e812a39%3A0x4d0c01a938a5bc19!2sChoco%20Bakery!5e0!3m2!1svi!2s!4v1721645664751!5m2!1svi!2s"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                                <!-- Chi nhánh 2 -->
+                                <iframe class="choco-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.94923732244587!2d106.63046240489905!3d10.79692421638217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bffdee41c3d%3A0x10a94e21fab5aa56!2zMzEyIMSQLiBUw6JuIFPGoW4gTmjDrCwgVMOibiBTxqFuIE5ow6wsIFTDom4gUGjDuiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1724329588614!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center text-lg-start text-white container my-5" style="background-color: #45526e">
+
+        </footer>
+
+        <div class="sticky-icon-zone">
+
+        </div>
+    </div>
+
+    <script src="./js/header-footer/add-header-footer.js"></script>
+    <script src="./js/shared/breadcrumb.js"></script>
+    <script src="./js/shared/contact-us.js"></script>
+    <script src="./js/shared/sticky-icon.js"></script>
+</body>
+
+</html>

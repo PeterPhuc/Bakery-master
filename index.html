@@ -4,302 +4,1142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery - Fresh Cakes & Small Chops</title>
+    <title>Choco Bakery</title>
     <link rel="icon" type="image/x-icon" href="./images/Chococakepng.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
-    <script src="js/app.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="style.css">
-    
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/public/normalize/normalize.min.css">
+    <link rel="stylesheet" href="./css/public/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public/swiper/swiper-bundle.min.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/list-product/list-product.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
+    <link rel="stylesheet" href="./css/header-footer/header/header.css">
+    <link rel="stylesheet" href="./css/header-footer/header/menu-mobile.css">
+    <link rel="stylesheet" href="./css/header-footer/footer/footer.css">
+    <link rel="stylesheet" href="./css/slider-carousel.css">
+    <link rel="stylesheet" href="./css/others/sticky-icon-perpage.css">
+
+    <link rel="stylesheet" href="./css/index-responsive.css">
+
+    <script defer src="./js/public/bootstrap/bootstrap5-3-3.bundle.min.js"></script>
+    <script defer src="./js/public/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <!--HTML SNIPPETS-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    
-    
-
     <!-- HEADER -->
-    <header>
-        <!-- <div class="container">
-            <nav class="navbar" >
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                </div>
-                
-                <a href="index.html" class="logo"> CHOCO BAKERY</a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="menu.html" class="nav-link active">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">Về chúng tôi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html#reservation" class="nav-link">Khách hàng thân thiết</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="bakers.html" class="nav-link">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="bakers.html" class="nav-link">Tin tức</a>
-                    </li>
-                    
-                </ul>
-            </nav>
-        
-        </div> -->
-    </header>
+    <div class="wrapper">
+        <header></header>
+        <main>
+            <section class="slider-section">
+                <div class="slider-section__wrapper">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper swiper__slides">
+                            <!-- Many slides here -->
+                            <div class="swiper-slide slides__slide">
+                                <!-- slides wrapper -->
+                                <div class="slide-wrapper">
+                                    <!-- Content each slide here -->
+                                    <div class="slide__image">
+                                        <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg" alt=""
+                                            srcset="">
+                                    </div>
+                                    <div class="slide__text">
 
-    <header></header>
-
-    <!-- VIDEO SECTION -->
-
-    <div class="master-vd">
-        <div class="mv-content">
-            <div class="choco-content"><img class="choco-icon-page" style="display: block"  src="./images/Chococakepng.png" alt="ChocoBakery"></div>
-        </div>
-        <div>
-            <video width="100%" height="50%" autoplay loop muted>
-                <source src="/images/VdChuDe.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-
-    <!-- HERO SECTION -->
-
-    <section class="hero" id="hero">
-        <div class="container">
-            <h1 class="headline">Ăn bánh có gu</h1>
-            <a href="index.html" class="btn btn-primary">Order Now</a>
-        </div>
-    </section>
-
-    <!-- STORY SECTION -->
-
-    <section class="our-story">
-        <div class="container">
-            <div class="row">
-                <div class="description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Bakery - Flower
-                        </h2>
-                        <h3 class="headline headline-dark">Ngọt ngào - lãng mạn</h3>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>Hương vị ngọt ngào, nguyên vẹn đến miếng bánh cuối cùng. Tinh tế, sang trọng, lãng mạn,  
-                        trọn vẹn hơn cùng gia đình bạn bè người thương
-                    </p>
-                    <a href="index.html" class="btn btn-secondary">See full menu</a>
-                </div>
-                <div class="image animate-right">
-                    <img class="story-img" src="images/story-cakeNflower.jpg" alt="Cake and Flower">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Menu slider -->
-    <div class="image-slider">
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf1.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf2.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf3.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf4.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf5.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf6.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf7.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf8.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf9.jpg" alt="C1"> 
-            </div>
-        </div>
-
-        <div class="image-item">
-            <div class="image">
-                <img src="./images/cf10.jpg" alt="C1"> 
-            </div>
-        </div>
-    </div>
-
-    <!-- MENU SECTION -->
-    <section class="menu">
-        <div class="container">
-            <div class="row">
-                <div class="image-group padding-right animate-left">
-                    <img src="images/story-c1.jpg" alt="image">
-                    <img src="images/story-c2.jpg" alt="image">
-                    <img src="images/story-c3.jpg" alt="image">
-                    <img src="images/story-c4.jpg" alt="image">
-                </div>
-                <div class="description animate-right">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Bakery
-                        </h2>
-                        <h3 class="headline headline-dark">Menu</h3>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>Đối với những người gắn bó với nghề “làm ngọt cho đời” tại ChocoBakery, 
-                        niềm hạnh phúc lớn nhất chính là khi nhìn thấy những chiếc bánh nhỏ bé ấy được bạn nâng niu như một món quà trân quý bằng tất cả trái tim.</p>
-                    <a href="index.html" class="btn btn-secondary">See Full Menu</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TASTY SECTION -->
-    <section class="tasty shared">
-        <div class="container">
-            <div class="global-headline">
-                <div class="animate-top">
-                    <h2 class="sub-headline">
-                        Everything
-                    </h2>
-                </div>
-                <div class="animate-bottom">
-                    <h3 class="headline headline-dark">Tasty</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BAKERS DELIGHT SECTION -->
-    <section class="delight">
-        <div class="container">
-            <div class="row">
-                <div class="description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            Bread 
-                        </h2>
-                        <h3 class="headline headline-dark">Better</h3>
-                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    </div>
-                    <p>Các ổ bánh bánh nướng, ít bơ, ít ngọt, hương vị thơm ngon đến miếng cuối, </p>
-                    <a href="index.html" class="btn btn-secondary">See full menu</a>
-                </div>
-                <div class="image-group animate-right">
-                    <img class="animate-top" src="images/br1.jpg" alt="bread">
-                    <img class="animate-bottom" src="images/br2.jpg" alt="bread">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <!-- <div class="container">
-            <div class="back-to-top">
-                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
-            </div>
-            <div class="footer__content">
-                <div class="footer__content-about animate-top">
-                    <h4>About Bakery</h4>
-                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI BÁNH CHOCO</p>
-                    <p>Với đa dạng các loại kem như kem vani, kem dừa, kem sữa chua và nhiều hương vị khác, Choco cam kết mang đến cho bạn sự hài lòng khi thưởng thức.</p>
-                </div>
-                <div class="footer__content-divider animate-bottom">
-                    <div class="social-media">
-                        <h4>Theo dõi chúng tôi</h4>
-                        <ul class="social-icons">
-                            <li>
-                                <a href="https://www.facebook.com/ChocoCakes142">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="newsletter-container">
-                        <h4>Newsletter</h4>
-                        <form action="" class="newsletter-form">
-                            <div class="newsletter-form-box">
-                                <input type="text" class="newsletter-input" placeholder="Your email address...">
-                                <button class="newsletter-btn" type="submit">
-                                    <i class="fas fa-envelope"></i>
-                                </button>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="swiper-button-next swiper__button swiper__button--next"></div>
+                        <div class="swiper-button-prev swiper__button swiper__button--prev"></div>
+                        <div class="swiper-pagination swiper__pagination"></div>
                     </div>
                 </div>
-            </div>
-        </div> -->
-    </footer>
-    
+            </section>
+            <section class="intro-choko-bakery">
+                <div class="intro-container">
+                    <div class="choko-logo">
+                        <img src="./images/chococakepng-cut.png" alt="">
+                    </div>
+                    <div class="choco-content-side">
+                        <!-- <h2 class="content-title-header">Choco Bakery</h2> -->
+                        <!-- <p class="content-description content-description--p1">
+                            Nếu bạn là một tín đồ hảo ngọt thì <strong>Choco Bakery</strong> là tiệm bánh kem mà bạn không thể bỏ qua. Chủ tiệm bánh có hơn 20 năm kinh nghiệm trong nghề và cực kỳ chỉn chu, tỉ mỉ trong mọi khâu làm bánh. Các loại bột, nguyên liệu làm bánh được cửa hàng nhập khẩu 100%.
+                        </p> -->
+                        <p class="content-description content-description--p2">
+                            <strong>Choco Bakery</strong> có rất nhiều loại bánh ngon nổi tiếng như: bánh kem
+                            mặn, bánh kem trái cây, bánh kem bắp, bánh kem Hàn Quốc, bánh Tiramisu… Bánh kem
+                            <strong>Choco Bakery</strong> có mùi thơm hảo hạng, vị ngọt dịu nhẹ, cuốn hút.
+                            Các nguyên liệu cao cấp kết hợp với nhau tạo nên những chiếc bánh kem có hương
+                            vị hấp dẫn, đặc biệt và “không đụng hàng” với nơi nào khác.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-collection section-page1">
+                <div class="section-wrapper">
+                    <div class="section-collection-heading-title">
+                        <h2>Sản phẩm chính</h2>
+                    </div>
+                    <div class="section-collection-category">
+                        <!-- Swiper -->
+                        <div class="section-collection-swiper swiper">
+                            <div class="swiper-wrapper swiper__slides">
+                                <!-- Many slides here -->
+                                <div class="swiper-slide slides__slide">
+                                    <!-- slides wrapper -->
+                                    <div class="slide-wrapper">
+                                        <!-- Content each slide here -->
+                                        <div class="slide__image">
+                                            <img src="./images/ngay-cua-me.png" alt="" srcset="">
+                                        </div>
+                                        <div class="slide__text">
+                                            <h2>Bánh sinh nhật</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper__button swiper__button--next"></div>
+                            <div class="swiper-button-prev swiper__button swiper__button--prev"></div>
+                            <div class="swiper-pagination swiper__pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-collection section-page2 section-product-list">
+                <div class="section-wrapper">
+                    <div class="section-collection-heading-title">
+                        <h2>Sản phẩm bán chạy</h2>
+                    </div>
+                    <div class="section-collection-product">
+                        <div class="container-fluid">
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="product-detail.html">
+                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="see-more">
+                        <a href="">
+                            <span>
+                                Xem tất cả
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-collection section-page2 section-product-list section-row-3">
+                <div class="section-wrapper">
+                    <div class="section-collection-heading-title">
+                        <h2>Bánh sinh nhật</h2>
+                    </div>
+                    <div class="section-collection-product">
+                        <div class="container-fluid">
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="see-more">
+                        <a href="">
+                            <span>
+                                Xem tất cả
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-collection section-page3 section-news">
+                <div class="section-wrapper">
+                    <div class="section-collection-heading-title news-heading">
+                        <h2>Tin tức nổi bật</h2>
+                    </div>
+                    <div class="section-collection-news">
+                        <div class="container-fluid">
+                            <!-- <div class="news-card-item">
+                                <a class="news-card__link-wrapper" href="">
+                                    <div class="news-card__image">
+                                        <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                            alt="" srcset="">
+                                    </div>
+                                    <div class="news-card__title">
+                                        <h2>Khai trương nhà mới - Khao deal siêu hời</h2>
+                                    </div>
+                                    <div class="news-card__post-meta">
+                                        <time datetime="2024-08-12">19-07-2023</time>
+                                    </div>
+                                    <div class="news-card__description">
+                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                    </div>
+                                </a>
+                            </div> -->
+
+                            <!-- Swiper -->
+                            <div class="swiper newsSwiper">
+                                <div class="swiper-wrapper swiper__slides">
+                                    <!-- Many slides here -->
+                                    <div class="swiper-slide slides__slide">
+                                        <!-- slides wrapper -->
+                                        <div class="slide-wrapper">
+                                            <!-- Content each slide here -->
+                                            <div class="news-card-item">
+                                                <div class="news-card-wrapper" href="">
+                                                    <div class="news-card__image">
+                                                        <a href="">
+                                                            <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                                            alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news-card__title">
+                                                        <h2>
+                                                            <a href="">
+                                                                Khai trương nhà mới - Khao deal siêu hờiKhai trương nhà mới - Khao deal siêu hời
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="news-card__post-meta">
+                                                        <time datetime="2024-08-12">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path> </svg><span>19-07-2023</span>
+                                                        </time>
+                                                    </div>
+                                                    <div class="news-card__description">
+                                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                                    </div>
+                                                    <div class="news-card__read-more">
+                                                        <a href="">
+                                                            Xem thêm
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slides__slide">
+                                        <!-- slides wrapper -->
+                                        <div class="slide-wrapper">
+                                            <!-- Content each slide here -->
+                                            <div class="news-card-item">
+                                                <div class="news-card-wrapper" href="">
+                                                    <div class="news-card__image">
+                                                        <a href="">
+                                                            <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                                            alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news-card__title">
+                                                        <h2>
+                                                            <a href="">
+                                                                Khai trương nhà mới - Khao deal siêu hờiKhai trương nhà mới - Khao deal siêu hời
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="news-card__post-meta">
+                                                        <time datetime="2024-08-12">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path> </svg><span>19-07-2023</span>
+                                                        </time>
+                                                    </div>
+                                                    <div class="news-card__description">
+                                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                                    </div>
+                                                    <div class="news-card__read-more">
+                                                        <a href="">
+                                                            Xem thêm
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slides__slide">
+                                        <!-- slides wrapper -->
+                                        <div class="slide-wrapper">
+                                            <!-- Content each slide here -->
+                                            <div class="news-card-item">
+                                                <div class="news-card-wrapper" href="">
+                                                    <div class="news-card__image">
+                                                        <a href="">
+                                                            <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                                            alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news-card__title">
+                                                        <h2>
+                                                            <a href="">
+                                                                Khai trương nhà mới - Khao deal siêu hờiKhai trương nhà mới - Khao deal siêu hời
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="news-card__post-meta">
+                                                        <time datetime="2024-08-12">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path> </svg><span>19-07-2023</span>
+                                                        </time>
+                                                    </div>
+                                                    <div class="news-card__description">
+                                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                                    </div>
+                                                    <div class="news-card__read-more">
+                                                        <a href="">
+                                                            Xem thêm
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slides__slide">
+                                        <!-- slides wrapper -->
+                                        <div class="slide-wrapper">
+                                            <!-- Content each slide here -->
+                                            <div class="news-card-item">
+                                                <div class="news-card-wrapper" href="">
+                                                    <div class="news-card__image">
+                                                        <a href="">
+                                                            <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                                            alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news-card__title">
+                                                        <h2>
+                                                            <a href="">
+                                                                Khai trương nhà mới - Khao deal siêu hờiKhai trương nhà mới - Khao deal siêu hời
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="news-card__post-meta">
+                                                        <time datetime="2024-08-12">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path> </svg><span>19-07-2023</span>
+                                                        </time>
+                                                    </div>
+                                                    <div class="news-card__description">
+                                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                                    </div>
+                                                    <div class="news-card__read-more">
+                                                        <a href="">
+                                                            Xem thêm
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slides__slide">
+                                        <!-- slides wrapper -->
+                                        <div class="slide-wrapper">
+                                            <!-- Content each slide here -->
+                                            <div class="news-card-item">
+                                                <div class="news-card-wrapper" href="">
+                                                    <div class="news-card__image">
+                                                        <a href="">
+                                                            <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                                            alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news-card__title">
+                                                        <h2>
+                                                            <a href="">
+                                                                Khai trương nhà mới - Khao deal siêu hờiKhai trương nhà mới - Khao deal siêu hời
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="news-card__post-meta">
+                                                        <time datetime="2024-08-12">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path> </svg><span>19-07-2023</span>
+                                                        </time>
+                                                    </div>
+                                                    <div class="news-card__description">
+                                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                                    </div>
+                                                    <div class="news-card__read-more">
+                                                        <a href="">
+                                                            Xem thêm
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slides__slide">
+                                        <!-- slides wrapper -->
+                                        <div class="slide-wrapper">
+                                            <!-- Content each slide here -->
+                                            <div class="news-card-item">
+                                                <div class="news-card-wrapper" href="">
+                                                    <div class="news-card__image">
+                                                        <a href="">
+                                                            <img src="https://hylammon.com.vn/wp-content/uploads/2024/05/banh-kem-pudding-4-300x214.png.webp"
+                                                            alt="" srcset="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="news-card__title">
+                                                        <h2>
+                                                            <a href="">
+                                                                Khai trương nhà mới - Khao deal siêu hờiKhai trương nhà mới - Khao deal siêu hời
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="news-card__post-meta">
+                                                        <time datetime="2024-08-12">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path> </svg><span>19-07-2023</span>
+                                                        </time>
+                                                    </div>
+                                                    <div class="news-card__description">
+                                                        <p>Tưng bừng khai trương cửa hàng thứ 72 của hệ thống Anh Quân Bakery tại số 369
+                                                            đườngTôn Đức Thắng, Phường Hòa Minh, quận Liên Chiểu, Thành phố Đà Nẵng</p>
+                                                    </div>
+                                                    <div class="news-card__read-more">
+                                                        <a href="">
+                                                            Xem thêm
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-next swiper__button swiper__button--next"></div>
+                                <div class="swiper-button-prev swiper__button swiper__button--prev"></div>
+                                <div class="swiper-pagination swiper__pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="see-more">
+                        <a href="">
+                            <span>
+                                Xem tất cả
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-collection section-page4 home-introduce">
+                <div class="section-wrapper">
+                    <div class="section-collection-heading-title">
+                        <h2>Về chúng tôi</h2>
+                        <h3>Chào mừng bạn đến Choco Bakery</h3>
+                    </div>
+                    <div class="section-collection-intro-content">
+                        <div class="intro-content-item intro-content-item--side-img">
+                            <img src="./images/about-us/main-avatar.jpg" alt="">
+                        </div>
+                        <div class="intro-content-item intro-content-item--main-content">
+                            <p>Anh Hòa Bakery là thương hiệu bánh ngọt Pháp của công ty cổ phần bánh ngọt Anh Hòa. Được
+                                thành lập từ năm 2004 tại con phố Ngõ Trạm, quận Hoàn Kiếm, Hà Nội. Trải qua hơn 15 năm
+                                phát triển, đến nay Anh Hòa Bakery đã có 13 cơ sở kinh doanh đặt trên những tuyến phố
+                                đông dân cư ở Hà Nội. Các sản phẩm Anh Hòa Bakery được làm từ các nguyên liệu nhập khẩu
+                                của các nước có truyền thống làm bánh như: Newzeland, Mỹ, Pháp, Bỉ. Với hương vị thơm
+                                ngon đặc trưng của các loại kem, bơ, sữa, phô mai, hạt hạnh nhân, chocolate... dưới bàn
+                                tay khéo léo của những người thợ làm bánh giàu kinh nghiệm. Quy mô xưởng sản xuất rộng
+                                hơn 2000m2 với các thiết bị tiên tiến hiện đại theo tiêu chuẩn ISO 2018, toàn bộ nhà máy
+                                được sơn phủ bởi sơn EPOXY đặc biệt. Anh Hòa Bakery luôn mang đến cho khách hàng những
+                                sản phẩm chất lượng nhất, đảm bảo tuyệt đối về an toàn vệ sinh thực phẩm.</p>
+
+                            <div class="intro-content-item__see-more see-more">
+                                <a href="">
+                                    <span>
+                                        Xem tiếp  
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-collection section-page5 home-contact-us">
+                <div class="section-wrapper">
+                    <div class="section-wrapper-inner">
+                        <div class="section-collection-contact-col-1">
+                            <!-- <div class="contact__social contact__social--col-1">
+                                <h2 class="contact__social-heading-title">Theo dõi chúng tôi</h2>
+                                <ul class="contact__social-icons">
+                                    <li><a href="https://www.facebook.com/ChocoCakes142" target="_blank"
+                                            class="smooth hv-o">
+                                            <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 50 50" width="500px" height="500px">
+                                                <path
+                                                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z" />
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="#" target="_blank" class="smooth hv-o tiktok">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="500px"
+                                                height="500px">
+                                                <path
+                                                    d="M 9 4 C 6.2495759 4 4 6.2495759 4 9 L 4 41 C 4 43.750424 6.2495759 46 9 46 L 41 46 C 43.750424 46 46 43.750424 46 41 L 46 9 C 46 6.2495759 43.750424 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.671576 6 44 7.3284241 44 9 L 44 41 C 44 42.671576 42.671576 44 41 44 L 9 44 C 7.3284241 44 6 42.671576 6 41 L 6 9 C 6 7.3284241 7.3284241 6 9 6 z M 26.042969 10 A 1.0001 1.0001 0 0 0 25.042969 10.998047 C 25.042969 10.998047 25.031984 15.873262 25.021484 20.759766 C 25.016184 23.203017 25.009799 25.64879 25.005859 27.490234 C 25.001922 29.331679 25 30.496833 25 30.59375 C 25 32.409009 23.351421 33.892578 21.472656 33.892578 C 19.608867 33.892578 18.121094 32.402853 18.121094 30.539062 C 18.121094 28.675273 19.608867 27.1875 21.472656 27.1875 C 21.535796 27.1875 21.663054 27.208245 21.880859 27.234375 A 1.0001 1.0001 0 0 0 23 26.240234 L 23 22.039062 A 1.0001 1.0001 0 0 0 22.0625 21.041016 C 21.906673 21.031216 21.710581 21.011719 21.472656 21.011719 C 16.223131 21.011719 11.945313 25.289537 11.945312 30.539062 C 11.945312 35.788589 16.223131 40.066406 21.472656 40.066406 C 26.72204 40.066409 31 35.788588 31 30.539062 L 31 21.490234 C 32.454611 22.653646 34.267517 23.390625 36.269531 23.390625 C 36.542588 23.390625 36.802305 23.374442 37.050781 23.351562 A 1.0001 1.0001 0 0 0 37.958984 22.355469 L 37.958984 17.685547 A 1.0001 1.0001 0 0 0 37.03125 16.6875 C 33.886609 16.461891 31.379838 14.012216 31.052734 10.896484 A 1.0001 1.0001 0 0 0 30.058594 10 L 26.042969 10 z M 27.041016 12 L 29.322266 12 C 30.049047 15.2987 32.626734 17.814404 35.958984 18.445312 L 35.958984 21.310547 C 33.820114 21.201935 31.941489 20.134948 30.835938 18.453125 A 1.0001 1.0001 0 0 0 29 19.003906 L 29 30.539062 C 29 34.707538 25.641273 38.066406 21.472656 38.066406 C 17.304181 38.066406 13.945312 34.707538 13.945312 30.539062 C 13.945312 26.538539 17.066083 23.363182 21 23.107422 L 21 25.283203 C 18.286416 25.535721 16.121094 27.762246 16.121094 30.539062 C 16.121094 33.483274 18.528445 35.892578 21.472656 35.892578 C 24.401892 35.892578 27 33.586491 27 30.59375 C 27 30.64267 27.001859 29.335571 27.005859 27.494141 C 27.009759 25.65271 27.016224 23.20692 27.021484 20.763672 C 27.030884 16.376775 27.039186 12.849206 27.041016 12 z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="smooth hv-o">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="500px"
+                                                height="500px">
+                                                <path
+                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://zalo.me/0962241142" target="_blank" class="smooth hv-o">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="500px"
+                                                height="500px">
+                                                <path
+                                                    d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 15.580078 6 C 12.00899 9.7156859 10 14.518083 10 19.5 C 10 24.66 12.110156 29.599844 15.910156 33.339844 C 16.030156 33.549844 16.129922 34.579531 15.669922 35.769531 C 15.379922 36.519531 14.799687 37.499141 13.679688 37.869141 C 13.249688 38.009141 12.97 38.430859 13 38.880859 C 13.03 39.330859 13.360781 39.710781 13.800781 39.800781 C 16.670781 40.370781 18.529297 39.510078 20.029297 38.830078 C 21.379297 38.210078 22.270625 37.789609 23.640625 38.349609 C 26.440625 39.439609 29.42 40 32.5 40 C 36.593685 40 40.531459 39.000731 44 37.113281 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 33 15 C 33.55 15 34 15.45 34 16 L 34 25 C 34 25.55 33.55 26 33 26 C 32.45 26 32 25.55 32 25 L 32 16 C 32 15.45 32.45 15 33 15 z M 18 16 L 23 16 C 23.36 16 23.700859 16.199531 23.880859 16.519531 C 24.050859 16.829531 24.039609 17.219297 23.849609 17.529297 L 19.800781 24 L 23 24 C 23.55 24 24 24.45 24 25 C 24 25.55 23.55 26 23 26 L 18 26 C 17.64 26 17.299141 25.800469 17.119141 25.480469 C 16.949141 25.170469 16.960391 24.780703 17.150391 24.470703 L 21.199219 18 L 18 18 C 17.45 18 17 17.55 17 17 C 17 16.45 17.45 16 18 16 z M 27.5 19 C 28.11 19 28.679453 19.169219 29.189453 19.449219 C 29.369453 19.189219 29.65 19 30 19 C 30.55 19 31 19.45 31 20 L 31 25 C 31 25.55 30.55 26 30 26 C 29.65 26 29.369453 25.810781 29.189453 25.550781 C 28.679453 25.830781 28.11 26 27.5 26 C 25.57 26 24 24.43 24 22.5 C 24 20.57 25.57 19 27.5 19 z M 38.5 19 C 40.43 19 42 20.57 42 22.5 C 42 24.43 40.43 26 38.5 26 C 36.57 26 35 24.43 35 22.5 C 35 20.57 36.57 19 38.5 19 z M 27.5 21 C 27.39625 21 27.29502 21.011309 27.197266 21.03125 C 27.001758 21.071133 26.819727 21.148164 26.660156 21.255859 C 26.500586 21.363555 26.363555 21.500586 26.255859 21.660156 C 26.148164 21.819727 26.071133 22.001758 26.03125 22.197266 C 26.011309 22.29502 26 22.39625 26 22.5 C 26 22.60375 26.011309 22.70498 26.03125 22.802734 C 26.051191 22.900488 26.079297 22.994219 26.117188 23.083984 C 26.155078 23.17375 26.202012 23.260059 26.255859 23.339844 C 26.309707 23.419629 26.371641 23.492734 26.439453 23.560547 C 26.507266 23.628359 26.580371 23.690293 26.660156 23.744141 C 26.819727 23.851836 27.001758 23.928867 27.197266 23.96875 C 27.29502 23.988691 27.39625 24 27.5 24 C 27.60375 24 27.70498 23.988691 27.802734 23.96875 C 28.487012 23.82916 29 23.22625 29 22.5 C 29 21.67 28.33 21 27.5 21 z M 38.5 21 C 38.39625 21 38.29502 21.011309 38.197266 21.03125 C 38.099512 21.051191 38.005781 21.079297 37.916016 21.117188 C 37.82625 21.155078 37.739941 21.202012 37.660156 21.255859 C 37.580371 21.309707 37.507266 21.371641 37.439453 21.439453 C 37.303828 21.575078 37.192969 21.736484 37.117188 21.916016 C 37.079297 22.005781 37.051191 22.099512 37.03125 22.197266 C 37.011309 22.29502 37 22.39625 37 22.5 C 37 22.60375 37.011309 22.70498 37.03125 22.802734 C 37.051191 22.900488 37.079297 22.994219 37.117188 23.083984 C 37.155078 23.17375 37.202012 23.260059 37.255859 23.339844 C 37.309707 23.419629 37.371641 23.492734 37.439453 23.560547 C 37.507266 23.628359 37.580371 23.690293 37.660156 23.744141 C 37.739941 23.797988 37.82625 23.844922 37.916016 23.882812 C 38.005781 23.920703 38.099512 23.948809 38.197266 23.96875 C 38.29502 23.988691 38.39625 24 38.5 24 C 38.60375 24 38.70498 23.988691 38.802734 23.96875 C 39.487012 23.82916 40 23.22625 40 22.5 C 40 21.67 39.33 21 38.5 21 z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="smooth hv-o">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <path fill="#000000"
+                                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="smooth hv-o">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="500px"
+                                                height="500px">
+                                                <path
+                                                    d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <!-- <div class="contact__social contact__social--col-2">
+                                <h2 class="contact__social-heading-title">Đăng ký nhận tin</h2>
+                                <form class="contact__social-form">
+                                    <div class="form-group">
+                                        <input type="text" class="contact__social-form-input" id="exampleInputEmail2"
+                                            aria-describedby="emailHelp" placeholder="Nhập email của bạn">
+                                    </div>
+                                    <button type="submit" class="contact__social-form-btn" id="btn-submit-form"
+                                        aria-label="Đăng ký nhận tin">
+                                        Đăng ký
+                                    </button>
+                                </form>
+                            </div> -->
+
+                            <div class="contact-map choco-map">
+                                <iframe class="choco-map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2032466937458!2d106.6404764!3d10.7957398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529000e812a39%3A0x4d0c01a938a5bc19!2sChoco%20Bakery!5e0!3m2!1svi!2s!4v1721645664751!5m2!1svi!2s"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="section-collection-contact-col-2">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FChocoCakes142&tabs=timeline&width=310&height=365&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="choco-map">
+                <iframe class="choco-map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2032466937458!2d106.6404764!3d10.7957398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529000e812a39%3A0x4d0c01a938a5bc19!2sChoco%20Bakery!5e0!3m2!1svi!2s!4v1721645664751!5m2!1svi!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section> -->
+        </main>
+
+
+        <footer class="text-center text-lg-start text-white container my-5" style="background-color: #45526e">
+
+        </footer>
+
+        <div class="sticky-icon-zone">
+
+        </div>
+    </div>
+
+
+    <!-- <style>
+        .choco-map {
+            width: 100%;
+            height: 300px;
+        }
+    </style> -->
 
     <script src="./js/header-footer/add-header-footer.js"></script>
+    <script src="./js/shared/sticky-icon.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const mySwiper = document.querySelector(".swiper-wrapper.swiper__slides");
+            const slider_imgs = ['https://chocobakery.vn/public/upload/images/slide/choco-banner-slide-2.jpg',
+                'https://chocobakery.vn/public/upload/images/slide/choco-banner-slide-1.jpg',
+                './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg',
+                './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_8091.jpg',
+                './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_8094.jpg',
+                './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_8096.jpg',
+                './images/about-img-2.jpeg',
+                './images/tasteful-recipes.jpg',
+                './images/ngay-cua-me.png'];
+
+            mySwiper.innerHTML = slider_imgs.map((image, index) => {
+                return `
+                    <div class="swiper-slide slides__slide">
+                        <div class="slide-wrapper">
+                            <div class="slide__image">
+                                <img src="${image}" alt="" srcset="">
+                            </div>
+                            <div class="slide__text">
+                                        
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            var swiper = new Swiper(".slider-section .slider-section__wrapper .swiper.mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                threshold: 1,
+                longSwipesRatio: 0.05,
+                grabCursor: true,
+                // keyboard: {
+                //     enabled: true,
+                // },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false
+                },
+                effect: "fade",
+                // autoplay: false
+                //             effect: "creative",
+                //             creativeEffect: {
+                //     prev: {
+                //       shadow: true,
+                //       translate: ["-120%", 0, -500],
+                //     },
+                //     next: {
+                //       shadow: true,
+                //       translate: ["120%", 0, -500],
+                //     },
+                //   },
+                speed: 1100,
+                loopPreventsSliding: false
+            });
+            // Optional: Manually start autoplay after a certain event
+            // swiper.on('touchEnd', function () {
+            //     if (!swiper.autoplay.running) {
+            //         swiper.autoplay.start();
+            //     }
+            // });
+
+
+
+
+
+
+
+
+            const mySwiperCollection = document.querySelector("section.section-collection .section-collection-swiper.swiper .swiper-wrapper.swiper__slides");
+            const sliderCategoryData = [
+                {
+                    title: "Bánh kem",
+                    img_link: './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg'
+                },
+                {
+                    title: "Bánh sinh nhật",
+                    img_link: './images/ngay-cua-me.png'
+                },
+                {
+                    title: "Bánh nướng",
+                    img_link: './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7650.jpg'
+                },
+                {
+                    title: "Bánh bông lan",
+                    img_link: './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7663.jpg'
+                },
+                {
+                    title: "Bánh trung thu",
+                    img_link: './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7671.jpg'
+                },
+                {
+                    title: "Bánh tráng miệng",
+                    img_link: './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7677.jpg'
+                },
+                {
+                    title: "Set tiệc trà",
+                    img_link: './images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7908.jpg'
+                }];
+
+            mySwiperCollection.innerHTML = sliderCategoryData.map((data, index) => {
+                return `
+                    <div class="swiper-slide slides__slide">
+                        <div class="slide-wrapper">
+                            <div class="slide__image">
+                                <img src="${data.img_link}" alt="" srcset="">
+                            </div>
+                            <div class="slide__text">
+                                <h2>${data.title}</h2>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            var swiper2 = new Swiper("section.section-collection .section-collection-category .section-collection-swiper.swiper", {
+                slidesPerView: 3,
+                spaceBetween: 5,
+                // loop: true,
+                loop: true, // Giữ loop
+                // loopAdditionalSlides: 2, /// Thêm slide ảo
+                // loopedSlides: 10, // Đặt số lượng slide để loop lại
+                threshold: 1,
+                // grabCursor: true,
+
+                // centeredSlides: true, // Để các slide được căn giữa
+                centerInsufficientSlides: true,
+                // centeredSlidesBounds: true,
+                // slidesOffsetBefore: 0, // Khoảng cách thêm vào trước tất cả các slide
+                // slidesOffsetAfter: 50, // Khoảng cách thêm vào sau tất cả các slide
+
+                longSwipesRatio: 0.02,
+                // pagination: {
+                //     el: ".swiper-pagination",
+                //     clickable: true,
+                // },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    400: {
+                        slidesPerView: 3,
+                        spaceBetween: 5,
+                    },
+                    600: {
+                        slidesPerView: 4,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 5.5,
+                        spaceBetween: 15,
+                    },
+                    1599: {
+                        slidesPerView: 5,
+                        spaceBetween: 15,
+                    }
+                },
+            });
+
+
+
+            // Swiper news
+            var swiper3 = new Swiper(".section-collection.section-page3.section-news .newsSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                // autoplay: {
+                //     delay: 8000,
+                //     disableOnInteraction: false,
+                //     pauseOnMouseEnter: false
+                // },
+                // speed: 1000,
+
+                // loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                // rewind: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                    }
+                },
+            });
+        })
+    </script>
 </body>
 
 </html>

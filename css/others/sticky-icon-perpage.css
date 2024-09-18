@@ -1,0 +1,114 @@
+#hotline {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    z-index: 999999999;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+#hotline > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #e90d0d; */
+    /* background-color: #e90d0de6; */
+    background-color: #e90d0dcf;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    line-height: 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(188, 15, 15, 0.3);
+    -webkit-animation: pulse 1.25s infinite;
+    transition: all .3s;
+}
+#hotline > a svg {
+    width: 23px;
+    fill: #fff;
+
+    transform-origin: 50% 50%;
+    animation: alo-circle-img-anim 1.25s infinite ease-in-out;
+}
+@keyframes pulse  {
+    0% {
+        transform: scale(0.9);
+    }
+    60% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(188, 15, 15, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(188, 15, 15, 0);
+    }
+}
+@keyframes alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+
+
+
+
+#zalo-chat {
+    position: fixed;
+    /* bottom: 26px; */
+    bottom: 53px;
+    right: 20px;
+    z-index: 999999999;
+    display: flex;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); */
+}
+#zalo-chat > a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#zalo-chat > a svg {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #hotline {
+        width: 50px;
+        height: 50px;
+        bottom: 44px;
+        left: 19px;
+    }
+    #zalo-chat {
+        width: 50px;
+        height: 50px;
+        bottom: 40px;
+        right: 10px;
+    }
+}

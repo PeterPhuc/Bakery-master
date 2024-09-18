@@ -1,0 +1,396 @@
+@media only screen and (max-width: 1024px) {
+    /* Style main header title các section */
+    section.section-collection .section-wrapper .section-collection-heading-title h2 {
+        font-size: 3rem;
+    }
+
+    /* Intro */
+    section.intro-choko-bakery .intro-container .choko-logo {
+        --size-logo-intro-choko: 98px;
+    }   
+
+    section.intro-choko-bakery .intro-container .choco-content-side p.content-description {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }   
+    section.intro-choko-bakery .intro-container .choco-content-side p.content-description strong {
+        font-size: 1.8rem;
+    }   
+
+    /* Slider sản phẩm chính */
+    section.section-collection.section-page1 {
+        /* margin-top: 46px; */
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    section.section-collection.section-page1 .section-wrapper .section-collection-heading-title {
+        margin-bottom: 12px;
+    }
+
+    section.section-collection .section-collection-category .section-collection-swiper.swiper .swiper-wrapper.swiper__slides .swiper-slide.slides__slide .slide-wrapper .slide__text {
+        height: 32%;
+    }
+    section.section-collection .section-collection-category .section-collection-swiper.swiper .swiper-wrapper.swiper__slides .swiper-slide.slides__slide .slide-wrapper .slide__text h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    /* Sản phẩm nổi bật */
+    section.section-collection.section-product-list {
+        /* margin-top: 40px; */
+        margin-top: 20px;
+        padding-top: 27px;
+    }
+
+    /* Tin tức */
+    /* section.section-collection .section-wrapper .section-collection-heading-title.news-heading {
+        margin-bottom: 6px;
+    }
+    section.section-collection.section-page3 .news-card__title h2 {
+        font-size: 1.6rem;
+    } */
+
+    /* Về chúng tôi */
+    section.section-collection.section-page4.home-introduce .section-wrapper .section-collection-heading-title {
+        margin-bottom: 23px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    /* Tin tức */
+    /* section.section-collection.section-page3 {
+        margin-top: 40px;
+        padding: 17px 0px 30px 0px;
+    } */
+
+    /* section.section-collection.section-page3 .container-fluid {
+        column-gap: 0.2%;
+    } */
+    /* section.section-collection.section-page3 .news-card-item {
+        width: 49.9%;
+    } */
+    /* section.section-collection.section-page3 div.news-card-wrapper {
+        padding: 12px 4px;
+    } */
+
+
+    /* Về chúng tôi */
+    section.section-collection.section-page4 .section-collection-intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.section-collection.section-page4 .intro-content-item--side-img {
+        width: 69%;
+        height: 331px;
+        overflow: hidden;
+    }
+    section.section-collection.section-page4 .intro-content-item--side-img img {
+        margin-top: -129px;
+    }
+    section.section-collection.section-page4 .intro-content-item--main-content p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    section.section-collection.section-page4 .intro-content-item__see-more.see-more {
+        justify-content: center;
+        padding-top: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Style main header title các section */
+    section.section-collection .section-wrapper .section-collection-heading-title h2 {
+        font-size: 2.4rem;
+    }
+
+
+    section.intro-choko-bakery .intro-container {
+        flex-direction: column;
+        padding: 19px 30px 20px 30px;
+    }
+    section.intro-choko-bakery::before {
+        width: 330px;
+        height: 229px;
+        top: 67px;
+        left: -17%;
+    }
+    section.intro-choko-bakery::after {
+        width: 330px;
+        height: 229px;
+        top: 67px;
+        right: -17%;
+    }
+    section.intro-choko-bakery .intro-container .choko-logo {
+        margin-bottom: 10px;
+    }   
+    section.intro-choko-bakery .intro-container .choco-content-side {
+        width: 100%;
+    }   
+
+
+    /* Slider sản phẩm chính */
+    section.section-collection .section-collection-category .section-collection-swiper.swiper {
+        height: 22vw;
+    }
+    section.section-collection .section-wrapper .section-collection-heading-title {
+        margin-bottom: 10px;
+    }
+    section.section-collection .swiper__button:after {
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+
+
+    /* Về chúng tôi */
+    section.section-collection.section-page4 .section-collection-heading-title h3 {
+        font-size: 2rem;
+    }
+    section.section-collection.section-page4 .intro-content-item--side-img {
+        width: 89%;
+        height: 309px;
+        overflow: hidden;
+    }
+    section.section-collection.section-page4 .intro-content-item--side-img img {
+        margin-top: -196px;
+    }
+    section.section-collection.section-page4 .intro-content-item--main-content p {
+        line-height: 1.5;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+
+    /* Tin tức */
+    /* section.section-collection.section-page3 .news-card-item {
+        width: 49.9%;
+    } */
+}
+
+@media only screen and (max-width: 670px) { 
+    /* Tin tức */
+    /* section.section-collection.section-page3.section-news {
+        margin-top: 30px;
+    }  */
+    /* section.section-collection.section-page3 .news-card-item {
+        width: 33.2%;
+    } */
+
+
+    /* Về chúng tôi */
+    section.section-collection.section-page4 {
+        /* margin-top: 32px; */
+        margin-top: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    /* SLider trang chủ*/
+    section.slider-section .slider-section__wrapper .swiper.mySwiper {
+        height: 53vw;
+    }
+
+    /* Intro */
+    section.intro-choko-bakery::before,
+    section.intro-choko-bakery::after {
+        display: none;
+    }
+
+    /* Slider sản phẩm chính */
+    section.section-collection .section-collection-category .section-collection-swiper.swiper {
+        height: 25vw;
+    }
+    section.section-collection .swiper__button:after {
+        width: 37px;
+        height: 37px;
+        font-size: 1.7rem;
+    }
+
+
+    /* Tin tức */
+    /* section.section-collection.section-page3 .news-card-item {
+        width: 49.9%;
+    } */
+    /* section.section-collection.section-page3 div.news-card-wrapper {
+        padding: 10px 7px;
+    } */
+
+
+
+
+    /* Về chúng tôi */
+    section.section-collection.section-page4 .intro-content-item--side-img {
+        width: 93%;
+        height: 240px;
+        overflow: hidden;
+    }
+    /* section.section-collection.section-page4 .intro-content-item--side-img img {
+        margin-top: -196px;
+    } */
+}
+
+@media only screen and (max-width: 480px) { 
+    /* Style main header title các section */
+    section.section-collection .section-wrapper .section-collection-heading-title {
+        margin-bottom: 0px;
+    }
+    section.section-collection .section-wrapper .section-collection-heading-title h2 {
+        font-size: 2rem;
+    }
+
+    /* SLider trang chủ*/
+    section.slider-section .slider-section__wrapper .swiper.mySwiper {
+        height: 61vw;
+    }
+
+
+    /* Slider sản phẩm chính */
+    section.section-collection.section-page1 {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        margin-top: 12px;
+    }
+    section.section-collection .section-collection-category .section-collection-swiper.swiper {
+        height: 28vw;
+    }
+    section.section-collection .swiper__button:after {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+    section.section-collection .section-collection-category {
+        margin-top: 7px;
+    }
+
+
+    /* Sản phẩm nổi bật */
+    section.section-collection.section-product-list {
+        padding-top: 19px;
+    }
+    section.section-collection.section-product-list .section-wrapper .section-collection-heading-title {
+        margin-bottom: 8px;
+    }
+
+
+    /* Tin tức */
+    /* section.section-collection .section-wrapper .section-collection-heading-title.news-heading {
+        margin-bottom: 8px;
+    }
+    section.section-collection .section-wrapper .section-collection-heading-title h2 {
+        font-size: 2rem;
+    }
+    section.section-collection.section-page3 .news-card-item {
+        width: 100%;
+        margin-bottom: 15px;
+    } */
+
+    /* Về chúng tôi */
+    section.section-collection.section-page4 .section-wrapper {
+        padding: 0 20px;
+    }
+    section.section-collection.section-page4 .section-collection-heading-title h3 {
+        font-size: 1.6rem;
+    }
+    section.section-collection.section-page4 .intro-content-item--side-img {
+        width: 100%;
+        height: 218px;
+        overflow: hidden;
+    }
+    section.section-collection.section-page4 .intro-content-item--side-img img {
+        margin-top: -87px;
+    }
+}
+
+@media only screen and (max-width: 370px) { 
+    /* Slider sản phẩm chính */
+    section.section-collection .section-collection-category .section-collection-swiper.swiper .swiper-wrapper.swiper__slides .swiper-slide.slides__slide .slide-wrapper .slide__text h2 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
+
+
+/* Breakpoint riêng cho phần tin tức homepage */
+@media only screen and (max-width: 1024px) { 
+    section.section-collection .section-wrapper .section-collection-heading-title.news-heading {
+        margin-bottom: 10px;
+    }
+    section.section-collection.section-page3 div.news-card-wrapper {
+        padding: 15px 8px;
+    }
+    section.section-collection.section-page3 .news-card__post-meta {
+        /* top: 11px; */
+        /* top: 25px; */
+        left: 5px;
+    }
+}
+@media only screen and (max-width: 915px) { 
+    section.section-collection.section-page3 .container-fluid {
+        padding: 0px 0px;
+    }
+    section.section-collection.section-page3 div.news-card-wrapper {
+        padding: 14px 6px;
+    }
+    section.section-collection.section-page3 .news-card__post-meta {
+        left: 4px;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    section.section-collection.section-page3 .newsSwiper .swiper__button::after {
+        width: auto;
+        height: auto;
+    }
+    section.section-collection.section-page3 .news-card__post-meta {
+        /* left: 5px; */
+
+        top: 21px;
+        left: 4px;
+    }
+}
+
+@media only screen and (max-width: 576px) { 
+    section.section-collection .section-wrapper .section-collection-heading-title.news-heading {
+        margin-bottom: 8px;
+    }
+    section.section-collection.section-page3 .news-card__image img {
+        max-height: 274px;
+    }
+    section.section-collection.section-page3 .newsSwiper .swiper__button {
+        /* --size-button-pnt: 38px; */
+        /* --size-button-pnt: 30px; */
+    }
+    section.section-collection.section-page3 .newsSwiper .swiper__button::after {
+        /* font-size: 1.2rem; */
+    }
+    section.section-collection.section-page3 .newsSwiper .swiper__button.swiper-button-prev {
+        left: var(--swiper-navigation-sides-offset, 8px);
+    }
+    section.section-collection.section-page3 .newsSwiper .swiper__button.swiper-button-next {
+        right: var(--swiper-navigation-sides-offset, 8px);
+    }
+
+    section.section-collection.section-page3 .news-card__post-meta {
+        /* top: 9px; */
+
+
+        top: 22px;
+        left: 3px;
+    }
+
+    section.section-collection.section-page3 .news-card__read-more a {
+        font-size: 1.4rem;
+    }
+    section.section-collection.section-page3 .news-card__read-more a::before {
+        height: 1.5px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif, "Montserrat", sans-serif, 'Helvetica Neue', sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: inherit;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    /* background-color: #f4f4f4; */
+}
+
+section.section-checkout {
+    margin-bottom: 150px;
+}
+
+/* Breadcrumb here */
+.breadcrumb-wrapper .container {
+    padding: 15px 0px 20px 20px;
+    max-width: 1155px;
+}
+
+
+
+
+section.section-about-us {
+    width: 100%;
+}
+section.section-about-us .content-area.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.section-about-us .content-area.page-wrapper .content-area__container {
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
+}
+section.section-about-us .content-area.page-wrapper .content-area__container .main-page {
+    width: 100%;
+}
+section.section-about-us .content-area.page-wrapper .content-area__container .main-page h1 {
+    width: 100%;
+    letter-spacing: 1.5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ea9711;
+    margin-bottom: 15px;
+    /* text-align: center; */
+}
+section.section-about-us .content-area.page-wrapper .content-area__container p {
+    /* font-family: "Montserrat", sans-serif; */
+    line-height: 26px;
+    font-size: 1.6rem;
+    text-align: justify;
+    /* margin-bottom: 1.4em; */
+}
+
+section.section-about-us .content-area.page-wrapper .content-area__container p strong {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    section.section-about-us .content-area.page-wrapper .content-area__container .main-page h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section.section-about-us .content-area.page-wrapper .content-area__container .main-page h1 {
+        font-size: 1.8rem;
+    }
+    section.section-about-us .content-area.page-wrapper .content-area__container p {
+        line-height: 24px;
+        font-size: 1.4rem;
+    }
+    section.section-about-us .content-area.page-wrapper .content-area__container p strong {
+        font-size: 1.6rem;
+    }
+}

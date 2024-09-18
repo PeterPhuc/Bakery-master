@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán - Choco Bakery</title>
+    <link rel="icon" type="image/x-icon" href="./images/Chococakepng.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/public/normalize/normalize.min.css" />
+    <link rel="stylesheet" href="./css/public/bootstrap/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/header-footer/header/header.css" />
+    <link rel="stylesheet" href="./css/header-footer/header/menu-mobile.css" />
+    <link rel="stylesheet" href="./css/header-footer/footer/footer.css" />
+
+    <link rel="stylesheet" href="./css/others/sticky-icon-perpage.css" />
+    <link rel="stylesheet" href="./css/contact-us.css" />
+
+    <link rel="stylesheet" href="./css/checkout.css" />
+
+    <script defer src="./js/public/bootstrap/bootstrap5-3-3.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main>
+            <section class="section-checkout">
+                <div class="breadcrumb-wrapper"></div>
+                <div class="main-content">
+                    <div class="payment-container">
+                        <div class="payment-left">
+                            <h2 class="payment-header">
+                                Thông tin nhận hàng
+                            </h2>
+                            <form action="">
+                                <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <label class="title">Thông tin nhận hàng</label>
+                                </div> -->
+                                <div class="form-group form-group-mb">
+                                    <input autocapitalize="off" class="form-control" id="full_name" name="full_name"
+                                        placeholder="Họ tên *" required="" type="text" value="">
+
+                                    <input autocapitalize="off" class="form-control" id="phone" maxlength="15"
+                                        name="phone" placeholder="Điện thoại *" required="" type="tel" value="">
+                                </div>
+
+                                <div class="form-group form-group-mb">
+                                    <input autocapitalize="off" class="form-control" id="email" name="email"
+                                        placeholder="Email *" required="" type="text" value="">
+
+                                    <input autocapitalize="off" class="form-control" id="address" name="address"
+                                        placeholder="Địa chỉ *" required="" type="text" value="">
+                                </div>
+
+                                <div class="form-group form-group-mb">
+                                    <select aria-hidden="true" class="form-select" data-address-type="province"
+                                        data-address-zone="billing" name="province" required="" type="text">
+                                        <option value="" hidden="">Tỉnh / Thành phố</option>
+                                        <option value="1">Hà Nội</option>
+                                        <option value="2">TP Hồ Chí Minh</option>
+                                        <option value="3">An Giang</option>
+                                        <option value="4">Bà Rịa-Vũng Tàu</option>
+                                    </select>
+                                    <select aria-hidden="true" class="form-select" data-address-type="district"
+                                        data-address-zone="billing" name="district" required="" type="text">
+                                        <option value="" hidden="">Quận / Huyện</option>
+                                        <option value="121">Thành phố Quy Nhơn</option>
+                                        <option value="122">Huyện An Lão</option>
+                                        <option value="123">Thị xã An Nhơn</option>
+                                        <option value="123">Thị xã An Nhơn</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-group--checkbox">
+                                    <!-- <select class="form-select" name="entry.402985196" required="">
+                                        <option value="">-- Hình thức thanh toán --</option>
+                                        <option value="Chuyển khoản ngân hàng">Chuyển khoản ngân hàng</option>
+                                        <option value="Nhận hàng thanh toán">Nhận hàng thanh toán</option>
+                                    </select> -->
+                                    <div class="form-group--checkbox-heading">
+                                        <span>Phương thức thanh toán</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment_method" checked
+                                            id="form-check-input-1">
+                                        <label class="form-check-label" for="form-check-input-1">
+                                            Thanh toán khi nhận hàng
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment_method"
+                                            id="form-check-input-2">
+                                        <label class="form-check-label" for="form-check-input-2">
+                                            Chuyển khoản ngân hàng
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea autocapitalize="off" class="form-control" name="entry.354404807"
+                                        placeholder="Ghi chú đơn hàng (Ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn)" rows="6"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <a href="" class="btncart-continue-shopping">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <title></title>
+                                            <g data-name="Layer 2" id="Layer_2">
+                                                <path d="M10.1,23a1,1,0,0,0,0-1.41L5.5,17H29.05a1,1,0,0,0,0-2H5.53l4.57-4.57A1,1,0,0,0,8.68,9L2.32,15.37a.9.9,0,0,0,0,1.27L8.68,23A1,1,0,0,0,10.1,23Z"></path>
+                                            </g>
+                                        </svg>
+                                        <span>Tiếp tục mua hàng</span>
+                                    </a>
+                                    <button class="button btn-proceed-checkout btn btn-large btn-block btn-checkout" title="Đặt hàng" type="submit">Đặt hàng</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="payment-right">
+                            <h2 class="payment-header">
+                                Đơn hàng
+                                <span class="order-number">(16 sản phẩm)</span>
+                            </h2>
+                            <div class="order-summary-sections">
+                                <div class="order-product-list">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Hình ảnh</th>
+                                                <th scope="col">Sản phẩm</th>
+                                                <th scope="col">Đơn giá</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            9
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            90
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            9
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            9000
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            9
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td-image">
+                                                    <div class="cart-image">
+                                                        <a class="cart-image__link" title="Bánh kem">
+                                                            <img src="./images/BANH-AN.-20240722T113509Z-001/Banh-an/IMG_7611.jpg"
+                                                                alt="" srcset="">
+                                                        </a>
+                                                        <span class="cart-image-thumb-quantity">
+                                                            9
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="td-name td-order-mobile">
+                                                    <a href="">Mousse Vải Sakura 15CM Mousse Vải Sakura 15CM</a>
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                                <td class="td-price">
+                                                    <span>12,900,000&#8363;</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="order-total-lines">
+                                    <div class="order-total-lines-wrapper">
+                                        <p><span>Tạm tính:</span><span>0&#8363;</span></p>
+                                        <p><span>Phí vận chuyển:</span><span>miễn phí</span></p>
+                                        <p><span>Tổng thanh toán:</span><span class="total-price">1,150,000&#8363;</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center text-lg-start text-white container my-5" style="background-color: #45526e"></footer>
+
+        <div class="sticky-icon-zone"></div>
+    </div>
+
+    <script src="./js/header-footer/add-header-footer.js"></script>
+    <script src="./js/shared/breadcrumb.js"></script>
+    <script src="./js/shared/contact-us.js"></script>
+    <script src="./js/shared/sticky-icon.js"></script>
+</body>
+
+</html>

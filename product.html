@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Choco Bakery</title>
+    <link rel="icon" type="image/x-icon" href="./images/Chococakepng.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/public/normalize/normalize.min.css">
+    <link rel="stylesheet" href="./css/public/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/header-footer/header/header.css">
+    <link rel="stylesheet" href="./css/header-footer/header/menu-mobile.css">
+    <link rel="stylesheet" href="./css/header-footer/footer/footer.css">
+
+    <link rel="stylesheet" href="./css/others/sticky-icon-perpage.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
+
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/list-product/list-product.css">
+
+    <script defer src="./js/public/bootstrap/bootstrap5-3-3.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+
+        <main>
+            <section class="section-collection section-page2 main-content section-product-list">
+                <div class="section-elementor-breadcrumb breadcrumb-w-img">
+                    <div class="section-breadcrumb-content">
+                        <div class="inner inner-text">
+                            <h2>Bánh Sinh Nhật 2024</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="breadcrumb-wrapper">
+
+                </div>
+                <div class="section-wrapper">
+
+                    <div class="section-ordering">
+                        <div class="container">
+                            <form action="">
+                                <label class="left hidden-xs">Sắp xếp: </label>
+                                <select class="form-select order" id="orderby" name="orderby">
+                                    <option value="date" selected>Mới nhất</option>
+                                    <option value="popularity">Yêu thích</option>
+                                    <option value="price">Giá: từ thấp -&gt; cao</option>
+                                    <option value="price-desc">Giá: từ cao -&gt; thấp</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="section-collection-heading-title">
+                        <h2>Sản phẩm</h2>
+                    </div> -->
+                    <div class="section-collection-product">
+                        <!-- <div class="container-product-categories-sidebar">
+                            <div class="categories-sidebar-inner">
+                                <div class="menu-blog">
+                                    <nav class="navbar">
+                                        <ul class="nav-list">
+                                            <li class="nav-item">
+                                                <div class="nav-item__link-area">
+                                                    <a href="index.html" class="nav-link"
+                                                        title="Trang chủ">Trang chủ</a>
+                                                    <span class="accordion-button collapsed"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#nav-sidebar-1" aria-expanded="false"
+                                                        aria-controls="nav-sidebar-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 512 512">
+                                                            <path
+                                                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <ul class="nav-list accordion-collapse collapse"
+                                                    id="nav-sidebar-1">
+                                                    <li class="nav-item">
+                                                        <div class="nav-item__link-area">
+                                                            <a href="index.html" class="nav-link"
+                                                                title="Trang chủ">Trang chủ</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <div class="nav-item__link-area">
+                                                            <a href="index.html" class="nav-link"
+                                                                title="Trang chủ">Trang chủ</a>
+                                                            <span class="accordion-button collapsed"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#nav-sidebar-1" aria-expanded="false"
+                                                                aria-controls="nav-sidebar-1">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 512 512">
+                                                                    <path
+                                                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                                                    </path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <ul class="nav-list">
+                                                            <li class="nav-item">
+                                                                <div class="nav-item__link-area">
+                                                                    <a href="index.html" class="nav-link"
+                                                                        title="Trang chủ">Trang chủ</a>
+                                                                    <span class="accordion-button collapsed"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#nav-sidebar-1" aria-expanded="false"
+                                                                        aria-controls="nav-sidebar-1">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            viewBox="0 0 512 512">
+                                                                            <path
+                                                                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                                                            </path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="container-fluid">
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp"
+                                                alt="" srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                            <div class="product-card-item">
+                                <div class="product-card-wrapper" href="">
+                                    <div class="card__image">
+                                        <a href="./product-detail.html">
+                                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6eU2wVaAp_rGNn5D8WOsE6Q4I326R76CZRSOAdl1MHbGEdBKOGkMRK-ZqxTFIwkzB0xiY8KUAPyvgakAx1DuxfsNNe02iIC4HjhXoMmJhzGxsrEZNuMXmXmEMQ0X9SEh9dIGX9MVDBCAKYmuFVzYDN-o0QudcfxYhTb1hfDteikSCbHSxa8IjHo2QVMcd/w480-h480-p-k-no-nu/ghg.webp" alt=""
+                                            srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="card__title">
+                                        <h2>
+                                            <a href="./product-detail.html">
+                                                Bánh mì kẹp thịt
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="card__price">
+                                        <p>185,000&#8363;</p>
+                                        <del>200,000&#8363;</del>
+                                    </div>
+                                    <span class="card__selling">Bán chạy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="see-more">
+                        <a href="">
+                            <span>
+                                XEM THÊM
+                            </span>
+                        </a>
+                    </div> -->
+
+                    <div class="pagination-container">
+                        <div class="pagination">
+                            <ul>
+                                <li class="pagination-button pagination-button--icon">
+                                    <a href="http://127.0.0.8:3001/Pagination/index.html?page=2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path
+                                                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="pagination-button">
+                                    <a class="active" href="http://127.0.0.8:3001/Pagination/index.html?page=1">1</a>
+                                </li>
+                                <li class="pagination-button">
+                                    <a class="" href="http://127.0.0.8:3001/Pagination/index.html?page=2">2</a>
+                                </li>
+                                <li class="pagination-button">
+                                    <a class="" href="http://127.0.0.8:3001/Pagination/index.html?page=3">3</a>
+                                </li>
+                                <li class="pagination-button">
+                                    <a class="" href="http://127.0.0.8:3001/Pagination/index.html?page=4">4</a>
+                                </li>
+                                <li class="pagination-button">
+                                    <a class="dotted">...</a>
+                                </li>
+                                </li>
+                                <li class="pagination-button pagination-button--icon">
+                                    <a href="http://127.0.0.8:3001/Pagination/index.html?page=2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path
+                                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="section-category-related">
+                        <div class="container">
+                            <div class="related-title">
+                                <h2>Danh mục sản phẩm cùng loại</h2>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a href="">Bánh bao</a></li>
+                                    <li><a href="">Bánh Kem Socola</a></li>
+                                    <li><a href="" class="active">Bánh Kem Sữa Tươi</a></li>
+                                    <li><a href="">Bánh Kem Sữa Tươi Trái Cây</a></li>
+                                    <li><a href="">Bánh Kem Sữa Tươi Phụ Kiện</a></li>
+                                    <li><a href="">Bánh Kem Mừng Thọ</a></li>
+                                    <li><a href="">Bánh Cưới/Bánh Kem Tầng</a></li>
+                                    <!-- <li><a href="">Bánh Kem Sữa Tươi Socola</a></li>
+                                    <li><a href="">Bánh Kem Bắp</a></li>
+                                    <li><a href="">Bánh Kem Rau Câu</a></li>
+                                    <li><a href="">Bánh Kem Mousse/Bánh Tiramisu</a></li>
+                                    <li><a href="">Bánh Kem Cade</a></li>
+                                    <li><a href="">Bánh Kem Lá Dứa</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-collection section-page5 home-contact-us">
+
+            </section>
+        </main>
+
+        <footer class="text-center text-lg-start text-white container my-5" style="background-color: #45526e">
+
+        </footer>
+
+        <div class="sticky-icon-zone">
+
+        </div>
+    </div>
+
+    <script src="./js/header-footer/add-header-footer.js"></script>
+    <script src="./js/shared/breadcrumb.js"></script>
+    <script src="./js/shared/contact-us.js"></script>
+    <script src="./js/shared/sticky-icon.js"></script>
+</body>
+
+</html>
