@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.29.0/tocbot.min.css"
+        integrity="sha512-4q0OX9NAYcRTFEfy9nTK0AV9N7MxM665neDXEW3CjAj1pXc6+8Bcd6ryXl6cY8mTBBXt0aXepnSDLLQZSuJRww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.29.0/tocbot.min.js"
+        integrity="sha512-+9XzRSJjnUN2OI106uAbbVZ3f+z1ncIRZFOr56hEdaxbQeZ8i1+B7OVjdF8tG4YhgxM/rWP73K2SiG93x6UJoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Toc -->
+    <nav class="js-toc"></nav>
+    <div class="js-content">
+        <h1 id="section1">Section 1</h1>
+            <h2 id="section11">Section 1.1</h2>
+                <h3 id="section111">Section 1.1.1</h3>
+                    <h4 id="section1111">Section 1.1.1.1</h4>
+                <h3 id="section112">Section 1.1.2</h3>
+            <h2 id="section12">Section 1.2</h2>
+            
+        <h1 id="section2">Section 2</h1>
+            <h2 id="section22">Section 2.1</h2>
+                <h3 id="section222">Section 2.1.1</h3>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            tocbot.init({
+                tocSelector: '.js-toc',
+                contentSelector: '.js-content',
+                headingSelector: '.js-content h1, .js-content h2, .js-content h3, .js-content h4, .js-content h5, .js-content h6',
+                scrollSmooth: true, // Cuộn mượt mà khi nhấp vào liên kết mục lục
+                headingsOffset: 20, // Khoảng cách từ trên cùng khi cuộn
+            });
+        })
+    </script>
+</body>
+</html>

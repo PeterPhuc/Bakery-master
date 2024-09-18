@@ -1,0 +1,284 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif, "Montserrat", sans-serif, 'Helvetica Neue', sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: inherit;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    /* background-color: #f4f4f4; */
+}
+
+section.section-collection.section-product-list {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    /* background-color: #f4f4f4; */
+}
+
+
+
+/* Danh mục sản phẩm */
+section.section-collection .section-wrapper .section-category-related{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 18px;
+}
+section.section-collection .section-wrapper .section-category-related .container{
+    width: 100%;
+    max-width: 1165px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+section.section-collection .section-wrapper .section-category-related .container .related-title {
+    margin-bottom: 14px;
+}
+
+section.section-collection .section-wrapper .section-category-related .container .related-title h2 {
+    font-size: 2rem;
+    font-family: 'Montserrat', Sans-serif;
+}
+
+section.section-collection .section-wrapper .section-category-related .container nav {
+    width: 100%;
+    /* max-width: 910px; */
+}
+section.section-collection .section-wrapper .section-category-related .container nav ul {
+    width: 100%;
+    display: flex;
+    column-gap: 12px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+
+    /* padding-bottom: 10px;
+    border-bottom: 1px solid #000; */
+}
+section.section-collection .section-wrapper .section-category-related .container nav ul li {
+    display: flex;
+}
+section.section-collection .section-wrapper .section-category-related .container nav ul li a {
+    display: flex;
+    /* background-color: rgb(246 244 244 / 58%); */
+    background-color: rgb(213 213 213 / 29%);
+    font-family: 'Montserrat', Sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 19.5px;
+    /* color: #463B3B; */
+    color: #737b8a;
+    border: 0;
+    border-radius: 9px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+section.section-collection .section-wrapper .section-category-related .container nav ul li a.active {
+    /* color: rgb(224, 25, 25);
+    background-color: rgb(246 244 244 / 12%); */
+    color: rgb(224, 25, 25);
+    background-color: rgb(228 228 228 / 28%);
+}
+section.section-collection .section-wrapper .section-category-related .container nav ul li a:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+
+/* Order sắp xếp theo giá */
+section.section-collection .section-wrapper .section-ordering{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+section.section-collection .section-wrapper .section-ordering .container{
+    width: 100%;
+    /* max-width: 1320px; */
+    /* max-width: 1225px; */
+    /* max-width: 1250px; */
+    /* max-width: 1240px; */
+    max-width: 1188px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 28px;
+}
+section.section-collection .section-wrapper .section-ordering .container form {
+    display: flex;
+    align-items: center;
+}
+
+section.section-collection .section-wrapper .section-ordering .container form label {
+    display: inline-block;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+section.section-collection .section-wrapper .section-ordering .container form select.form-select{
+    font-size: 1.6rem;
+    padding: 5px 37px 5px 8px;
+}
+section.section-collection .section-wrapper .section-ordering .container form select.form-select:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(31, 184, 211);
+}
+section.section-collection .section-wrapper .section-ordering .container form select.form-select option{
+    font-size: 1.7rem;
+}
+section.section-collection .section-wrapper .order{
+            
+}
+
+
+/*  Pagination */
+section.section-collection .pagination-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+section.section-collection .pagination-container .pagination{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6%;
+}
+section.section-collection .pagination-container .pagination ul { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    /* margin-left: 10px; */
+    column-gap: 10px;
+    row-gap: 7px;
+}
+section.section-collection .pagination-container .pagination ul li {
+    /* color: #212529;
+    border: 1px solid #aaa; */
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    /* margin-left: auto; */
+}
+section.section-collection .pagination-container .pagination ul li.pagination-button--icon a svg {
+    width: 12px;
+}
+section.section-collection .pagination-container .pagination ul li > a{
+    /* --size-item-pagination: 40px;
+    width: var(--size-item-pagination);
+    height: var(--size-item-pagination); */
+    user-select: none;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    /* background-color: blue;
+    color: #ffffff; */
+
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+
+    transition: background-color 0.2s ease;
+}
+section.section-collection .pagination-container .pagination ul li > a.active{
+    background-color: #ffb53c !important;
+    color: #ffffff;
+}
+section.section-collection .pagination-container .pagination ul li > a:hover:not(.dotted) {
+    background-color: #dfdfdf;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) { 
+    .breadcrumb-item {
+        font-size: 1.2rem;
+    }
+    section.section-collection .section-wrapper .section-ordering .container{
+        padding-right: 26px;
+    }
+    section.section-collection .section-wrapper .section-ordering .container form select.form-select{
+        font-size: 1.6rem;
+    }
+    section.section-collection .section-wrapper .section-ordering .container form select.form-select option{
+        font-size: 1.5rem;
+    }
+
+
+    section.section-collection .section-wrapper .section-category-related .container .related-title {
+        margin-bottom: 7px;
+    }
+    section.section-collection .section-wrapper .section-category-related .container .related-title h2 {
+        font-size: 1.8rem;
+    }
+    section.section-collection .section-wrapper .section-category-related .container nav ul {
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+@media only screen and (max-width: 480px) { 
+    section.section-collection .pagination-container {
+        margin-top: 27px;
+    }
+    section.section-collection .pagination-container .pagination ul li > a {
+        padding: 6px 10px;
+        border-radius: 7px;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    section.section-collection .section-wrapper .section-ordering .container form select.form-select{
+        font-size: 1.4rem;
+    }
+    section.section-collection .section-wrapper .section-ordering .container form select.form-select option{
+        font-size: 1.4rem;
+    }
+
+
+    section.section-collection .section-wrapper .section-category-related .container .related-title {
+        margin-bottom: 7px;
+    }
+    section.section-collection .section-wrapper .section-category-related .container .related-title h2 {
+        font-size: 1.6rem;
+    }
+    section.section-collection .section-wrapper .section-category-related .container nav ul {
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    section.section-collection .section-wrapper .section-category-related .container nav ul li a {
+        font-size: 1.4rem;
+        padding: 6px 10px;
+    }
+
+}

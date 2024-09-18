@@ -1,0 +1,409 @@
+section.slider-section {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #f4f4f4;
+}
+
+section.slider-section .slider-section__wrapper {
+    width: 100%;
+    height: auto;
+}
+
+section.slider-section .slider-section__wrapper .swiper.mySwiper {
+    width: 100%;
+    height: 44vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* container (slides) bọc all slide trừ button bullet, pagi,... */
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-wrapper.swiper__slides {
+    width: 100%;
+    height: 100%;
+}   
+
+/* Một slide */
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* transition-duration: 0.6s !important; */
+}
+
+/* Phần lót bên trong 1 slide */
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide .slide-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* cursor: pointer; */
+}
+
+/* Bây h là content trong slide (inside slide-wapper) */
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide .slide-wrapper 
+.slide__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide .slide-wrapper 
+.slide__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 2/1.5; */
+    object-fit: cover;
+    user-select: none;
+}
+
+/* Cấu hình css các bullet, nút điều hướng */
+/* CSS cho pagination */
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-pagination span.swiper-pagination-bullet {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /* margin: 0 5px; */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+    -webkit-transition: background-color 1s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+/* CSS cho các button */
+section.slider-section .slider-section__wrapper .swiper.mySwiper
+.swiper__button {
+    display: flex;
+    align-items: center;
+    top: 21px;
+    width: 5%;
+    height: 100%;
+    color: #fff;
+}
+
+section.slider-section .slider-section__wrapper .swiper.mySwiper
+.swiper__button--next {
+    padding-right: 1.9%;
+    justify-content: flex-end;
+}
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper__button--prev {
+    padding-left: 1.9%;
+    justify-content: flex-start;
+}
+
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper__button:after {
+    font-size: 3.2rem;
+    transition: all 0.15s linear;
+}
+
+section.slider-section .slider-section__wrapper .swiper.mySwiper 
+.swiper__button:hover {
+    cursor: pointer;
+}
+
+section.slider-section .slider-section__wrapper .swiper.mySwiper
+.swiper__button:hover:after {
+    /* font-size: 3.6rem; */
+    transform: scale(1.32);
+}
+
+section.slider-section .swiper-button-prev, section.slider-section .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 0px);
+    right: auto;
+}
+section.slider-section .swiper-button-next, section.slider-section .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 0px);
+    left: auto;
+}
+
+
+
+
+
+
+
+
+/* -------------------------- Category Slider -------------------------- */
+section.section-collection.section-page1 {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 60px; */
+    margin-top: 0px;
+    overflow: hidden;
+    /* background-color: #f2f2f2; */
+    background-color: #f0f0f0;
+    background-image: url(./../images/bg/Bg-cake-vector.png);
+    /* background-size: 73%;
+    background-position: 669px -127px; */
+
+    background-size: 72%;
+    background-position: 640px -118px;
+
+    /* background-image: url(https://anhquanbakery.com/images/bgspc.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    padding: 42px 0px 50px 0px;
+}
+
+section.section-collection.section-page1 .section-collection-heading-title {
+    display: none;
+}
+
+section.section-collection .section-collection-category {
+    padding: 0 12px;
+}
+
+/* section.section-collection .section-wrapper .section-collection-heading-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+section.section-collection .section-wrapper .section-collection-heading-title h2 {
+    width: 100%;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #ea9711;
+    text-align: center;
+} */
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper {
+    width: 130%;
+    height: 17vw;
+    /* max-height: 17vw; */
+    /* overflow: visible; */
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper 
+.swiper-wrapper.swiper__slides {
+    /* padding: 0 0 0 100px; */
+    width: 100%;
+    height: 100%;
+    margin-left: -15.7%;
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #ff5353; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide 
+.slide-wrapper {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper .slide__image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    transition: transform 1.2s ease;
+
+    position: relative;
+    z-index: 9;
+    /* border-radius: 100px; */
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper .slide__image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: 0;
+
+    transition: opacity 1.2s ease;
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper .slide__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+section.section-collection.section-page1 .swiper-horizontal>.swiper-pagination-bullets, 
+section.section-collection.section-page1 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+section.section-collection.section-page1 .swiper-pagination-custom, 
+section.section-collection.section-page1 .swiper-pagination-fraction {
+    margin-left: -11%;
+}
+
+section.section-collection.section-page1 .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 24.5%);
+}
+
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper .slide__text{
+    width: 100%;
+    height: 26%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper .slide__text h2 {
+    font-size: 1.6rem;
+    /* line-height: 22px; */
+    /* margin: 0 0 12px; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    transition: font-weight 1.2s ease;
+    /* display: -webkit-box; */
+}
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper:hover .slide__image {
+    transform: scale(1.2);
+}
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper:hover .slide__image::before {
+    opacity: 0.2;
+}
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-wrapper.swiper__slides .swiper-slide.slides__slide
+.slide-wrapper:hover .slide__text h2 {
+    font-weight: 800;
+}
+
+
+/* Css bullet */
+/* Cho section-collection-category */
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-pagination span.swiper-pagination-bullet {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+    -webkit-transition: background-color 1s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+section.section-collection .section-collection-category .section-collection-swiper.swiper
+.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+
+section.section-collection.section-page1 .swiper-button-prev, section.section-collection.section-page1 .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 2.5%);
+    right: auto;
+}
+
+
+section.section-collection.section-page1 .swiper__button:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+
+    flex-shrink: 0;
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (min-width: 1599px) { 
+    /* Slider chính */
+    section.slider-section .slider-section__wrapper .swiper.mySwiper {
+        max-width: 1800px;
+        height: 800px;
+    }
+
+
+    /* Slider danh mục sản phẩm */
+    section.section-collection .section-collection-category .section-collection-swiper.swiper {
+        width: 100%;
+        max-width: 1800px;
+        height: 270px;
+    }
+    section.section-collection .section-collection-category .section-collection-swiper.swiper .swiper-wrapper.swiper__slides {
+        margin-left: 0px;
+    }
+    section.section-collection .section-collection-category .section-collection-swiper.swiper .swiper-wrapper.swiper__slides .swiper-slide.slides__slide {
+        width: 355.545px;
+    }
+    section.section-collection.section-page1 .swiper-button-next {
+        right: var(--swiper-navigation-sides-offset, 2.5%);
+    }
+}

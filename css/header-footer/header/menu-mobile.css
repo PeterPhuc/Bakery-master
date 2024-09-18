@@ -1,0 +1,295 @@
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 70vw;
+    height: 100dvh;
+    background-color: #fff;
+    overflow: auto;
+    /* display: block;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.4s ease, display 0s;
+    transition-delay: 0s, 0.4s; */
+
+    display: block;
+    transform: translateX(-100%);
+}
+
+.nav-wrapper.close {
+    display: none;
+    transform: translateX(-100%);
+    animation: navClose 0.4s ease forwards; 
+}
+
+.nav-mobile-container .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100dvh;
+    background-color: #282828;
+
+    display: none;
+    opacity: 0;
+}
+
+@keyframes overlayAnimate {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 0.6;
+    }
+}
+
+@keyframes navOpen {
+    0% {
+        display: block;
+        transform: translateX(-100%);
+    }
+    100% {
+        display: block;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes navClose {
+    0% {
+        display: block;
+        transform: translateX(0%);
+    }
+    100% {
+        display: block;
+        transform: translateX(-100%);
+    }
+}
+
+
+.nav-mobile-container .overlay:hover,
+.nav-mobile-icon:hover,
+button.btn-close:hover {
+    cursor: pointer;
+}
+
+.nav-mobile-icon.show + .overlay {
+    display: block;
+    opacity: 0.6;
+
+    animation: overlayAnimate 0.4s ease forwards; 
+}
+.nav-mobile-icon.show ~ .nav-wrapper.open {
+    /* display: block;
+    transform: translateX(0%); */
+
+    display: block;
+    animation: navOpen 0.4s ease forwards; 
+    overflow: hidden;
+}
+
+.nav-mobile-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+
+    /* border-bottom: 1px solid #dddddd; */
+}
+
+.nav-mobile-header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #fff 0%, #083f88 50%, #fff 100%);
+}
+
+.mobile-logo__wrap-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+a.mobile-logo__link {
+    --size-logo-mobile-nav: 87px;
+    width: var(--size-logo-mobile-nav);
+    height: var(--size-logo-mobile-nav);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.mobile-logo__image {
+    --size-logo-mobile-nav-image: 105px;
+    width: var(--size-logo-mobile-nav-image);
+    height: var(--size-logo-mobile-nav-image);
+    object-fit: cover;
+}
+
+.mobile-button-close {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+
+    width: auto;
+    height: 100%;
+    min-width: 70px;
+    display: flex;
+    /* margin-top: -5px;
+        margin-right: 3%; */
+}
+
+button.btn-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+button.btn-close:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button.btn-close .btn-close__icon {
+    --size-icon-btn-close: 35px;
+    width: var(--size-icon-btn-close);
+    height: var(--size-icon-btn-close);
+}
+
+
+.nav-mobile-main {
+    width: 100%;
+    overflow: auto;
+    max-height: 84vh;
+}
+
+/* .nav-mobile-main::-webkit-scrollbar-thumb {
+    background-color: rgb(226, 163, 96);
+    border-radius: 100px;
+}
+.nav-mobile-main::-webkit-scrollbar {
+    width: 8px;
+} */
+
+.nav-mobile-main nav.nav {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.nav-mobile-main nav.nav ul.nav-list {
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.05); */
+    padding-left: 9px;
+}
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px #ebebeb solid;
+}
+
+/* .nav-mobile-main nav.nav ul.nav-list li.nav-item:not(:last-child) {
+    border-bottom: 1px dotted #CCC;
+} */
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item a.nav-link {
+    display: block;
+    flex-grow: 1;
+    /* width: 100%; */
+    padding: 8px 0 8px 0px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    /* color: #5f9e45; */
+    color: #000;
+    font-family: "Montserrat", Sans-serif;
+    /* text-transform: uppercase;*/
+    transition: color 160ms linear;
+}
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item a.nav-link:hover {
+    color: rgb(229 147 39);
+}
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item button {
+    width: auto;
+    padding: 0 20px 0 50px;
+    /* background-color: red; */
+    margin-right: 4%;
+}
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item button.accordion-button svg {
+    width: 18px;
+    transform: rotateZ(180deg);
+    transition: transform 0.3s ease, fill 160ms ease;
+}
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item button.accordion-button:hover svg {
+    fill: rgb(229 147 39);
+}
+
+.nav-mobile-main nav.nav ul.nav-list li.nav-item button.accordion-button.collapsed svg {
+    transform: rotateZ(0deg);
+}
+
+/* .nav-mobile-main nav.nav ul.nav-list.nav-submenu li.nav-item a.nav-link {
+    padding-left: 35px;
+} */
+
+/* .nav-mobile-main nav.nav ul.nav-list.nav-submenu-lv3 li.nav-item a.nav-link {
+    padding-left: 50px;
+}
+
+.nav-mobile-main nav.nav ul.nav-list.nav-submenu-lv3 li.nav-item:not(:last-child) {
+    border-bottom: 1px dotted #b2b2b2;
+} */
+
+
+@media only screen and (max-width: 600px) {
+    .nav-wrapper {
+        width: 76vw;
+    }
+
+    .nav-mobile-header {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .nav-mobile-main {
+        max-height: 87vh;
+    }
+
+    .nav-mobile-main nav.nav ul.nav-list li.nav-item a.nav-link {
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    .nav-mobile-main nav.nav ul.nav-list li.nav-item button.accordion-button svg {
+        width: 15px;
+    }
+
+    a.mobile-logo__link {
+        --size-logo-mobile-nav: 62px;
+    }
+
+    img.mobile-logo__image {
+        --size-logo-mobile-nav-image: 77px;
+    }
+
+    button.btn-close .btn-close__icon {
+        --size-icon-btn-close: 25px;
+    }
+}

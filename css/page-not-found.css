@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif, "Montserrat", sans-serif, 'Helvetica Neue', sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: inherit;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    /* background-color: #f4f4f4; */
+}
+
+section.section-content-error-page {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Breadcrumb here */
+.breadcrumb-wrapper .container {
+    padding: 15px 0px 20px 20px;
+    max-width: 1155px;
+}
+
+.page.layout-404 {
+    max-width: 1155px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page.layout-404 .page-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.page.layout-404 h1.title-section-page{
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #d3690e;
+}
+
+.page.layout-404 p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+.page.layout-404 a {
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-top: 14px;
+}
+
+.page.layout-404 .page-container::after {
+    content: "";
+    display: block;
+    background: #252a2b;
+    width: 80px;
+    height: 4px;
+    margin: 45px auto 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .page.layout-404 h1.title-section-page{
+        font-size: 6rem;
+    }
+    .page.layout-404 p {
+        font-size: 1.8rem;
+    }
+    .page.layout-404 a {
+        font-size: 1.6rem;
+    }
+    .page.layout-404 .page-container::after {
+        height: 2px;
+        margin: 28px auto 0;
+    }
+}

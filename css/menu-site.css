@@ -170,15 +170,15 @@ input[type=date], input[type=email], input[type=number], input[type=password], i
     width: 100%;
 }
 ul.products {
-    padding-left: 2.5%;
+    padding-left: 0.5%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 35px;
+    column-gap: 0.7%;
+    row-gap: 20px;
 }
 li.elementor-widget-container{
-    flex-grow: initial !important;
-    width: 214px;
+    flex-grow: 1 !important;
+    width: 259px;
     height: auto !important;
     position: relative;
 
@@ -191,6 +191,7 @@ li.elementor-widget-container{
     margin: 0 0 1em;
     box-shadow: none;
     margin-bottom: 16px;
+    border-radius: 10px;
 }
 
 .elementor-product-list .elementor-cta h2 {
